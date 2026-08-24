@@ -1,0 +1,8 @@
+.env
+/generated/prisma
+
+# Primsa AI generated files
+.agents
+.claude
+.windsurf
+skills-lock.json
