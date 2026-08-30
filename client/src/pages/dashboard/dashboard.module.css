@@ -1,0 +1,62 @@
+.recipeCarouselHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    color: var(--color-accent);
+    text-decoration: none;
+  }
+}
+
+.menuPlan {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 10px;
+  .menuPlanHeader {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-block-end: 8px;
+  }
+
+  & .planDetails {
+    display: flex;
+    font-size: 12px;
+    gap: 4px;
+    text-align: center;
+
+    & .planDay {
+      div {
+        align-items: center;
+        background-color: #eee;
+        border: 1px solid #7f7f7f;
+        border-radius: 20px;
+        display: flex;
+        height: 60px;
+        justify-content: center;
+        padding: 0 2px;
+      }
+
+      div.active {
+        background-color: #E8F5F3;
+        border: 1px solid #3B9B8A;
+        color: #3B9B8A;
+      }
+    }
+
+    .emptyDay {
+      div {
+        opacity: 0.4;
+      }
+
+      svg {
+        stroke-width: 1;
+      }
+    }
+  }
+}

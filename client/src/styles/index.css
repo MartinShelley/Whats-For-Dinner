@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@400;500;600&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+  --color-brand: #3B9B8A;
+  --color-brand-deep: #2D7A6B;
+  --color-brand-tint: #E8F5F3;
+  --color-brand-tint-strong: #D4EDE8;
+  --color-accent: #4B8278;
+  --color-accent-hover: #3D6B62;
+  --color-accent-tint: #E9F0EE;
+  --font-family: "Nunito", system-ui, sans-serif;
+}

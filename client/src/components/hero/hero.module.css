@@ -1,0 +1,28 @@
+.hero {
+  background: linear-gradient(180deg,rgba(59, 155, 138, 1) 0%, rgba(45, 122, 107, 1) 100%);
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.heroTitle {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.heroSubtitle {
+  color: #fff;
+  opacity: 0.8;
+}
+
+.heroButton {
+  border-radius: 20px;
+  color: #3B9B8A;
+  background-color: #fff;
+  display: inline-flex;
+  gap: 8px;
+  padding: 5px 10px;
+  margin-top: 16px;
+  border-color: transparent;
+  font-weight: 600;
+}
