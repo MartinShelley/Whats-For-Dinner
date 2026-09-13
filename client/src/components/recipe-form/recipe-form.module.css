@@ -1,0 +1,207 @@
+.recipeForm {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 10;
+  padding: 0 20px 20px;
+
+  .header {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    /* margin-block-end: 20px; */
+    position: sticky;
+    top: 0;
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+    width: 100%;
+    padding-block: 20px;
+
+    .cancel {
+      /* background-color: transparent; */
+      border: transparent;
+      border-radius: 50%;
+
+      svg {
+        background-color: #F3F4F6;
+        stroke: #4A5565;
+
+        circle {
+          stroke: transparent;
+        }
+      }
+    }
+
+    .save {
+      background-color: transparent;
+      border-color: transparent;
+      color: #3B9B8A;
+
+    }
+  }
+
+  .formWrapper {
+    display: grid;
+    gap: 20px;
+  }
+
+  .imageUpload {
+    align-items: center;
+    background-color: #F3F4F6;
+    border: 2px dashed #D1D5DC;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-block-size: 150px;
+
+    label {
+      align-content: center;
+      block-size: 100%;
+      inline-size: 100%;
+      justify-items: center;
+      text-align: center;
+    }
+  }
+
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  fieldset {
+    border: 0;
+    padding-inline: 0;
+
+    .difficulty {
+      display: flex;
+      /* justify-content: space-between; */
+      gap: 10px;
+
+      div {
+        text-align: center;
+        width: 100%;
+      }
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+
+    .ingredientsList {
+      list-style: none;
+      margin-block-end: 10px;
+      padding-inline: 0;
+    }
+
+    .ingredientsList li {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 0.5fr);
+      gap: 8px;
+    }
+
+    .ingredientsList li > div {
+      min-width: 0;
+    }
+
+    .ingredientsList li input {
+      width: 100%;
+    }
+
+    .ingredientsItem {
+      display: inline-flex;
+    }
+
+    .ingredients__add {
+      background-color: #D1D5DC;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 12px;
+      cursor: pointer;
+      width: 100%;
+
+      &:hover {
+        background-color: #2D7A6B;
+      }
+    }
+
+    .instructionsList {
+      counter-reset: instruction;
+      list-style: none;
+      margin-block-end: 10px;
+      padding-inline: 0;
+
+      li {
+        align-items: center;
+        counter-increment: instruction;
+        display: grid;
+        gap: 8px;
+        grid-template-columns: 24px minmax(0, 1fr);
+
+        &::before {
+          align-items: center;
+          background-color: #3B9B8A;
+          border-radius: 50%;
+          color: #fff;
+          content: counter(instruction);
+          display: grid;
+          font-size: 12px;
+          font-weight: 600;
+          height: 24px;
+          justify-items: center;
+          width: 24px;
+        }
+
+        textarea {
+          background-color: #F9FAFB;
+          border: 1px solid #E5E7EB;
+          border-radius: 12px;
+          padding: 10px;
+          block-size: 100px;
+        }
+      }
+    }
+
+    .instructions__add {
+      background-color: #D1D5DC;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 12px;
+      cursor: pointer;
+      width: 100%;
+
+      &:hover {
+        background-color: #2D7A6B;
+      }
+    }
+
+    .notesTextarea  {
+      width: 100%;
+      border-radius: 12px;
+      padding: 10px;
+      background-color: #F9FAFB;
+      border: 1px solid #E5E7EB;
+    }
+  }
+  .submitForm {
+    background-color: #4B8278;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 100%;
+
+    &:hover {
+      background-color: #2D7A6B;
+    }
+  }
+}

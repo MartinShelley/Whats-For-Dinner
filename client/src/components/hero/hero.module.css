@@ -2,6 +2,7 @@
   background: linear-gradient(180deg,rgba(59, 155, 138, 1) 0%, rgba(45, 122, 107, 1) 100%);
   padding: 20px;
   border-radius: 16px;
+  margin-bottom: 16px;
 }
 
 .heroTitle {

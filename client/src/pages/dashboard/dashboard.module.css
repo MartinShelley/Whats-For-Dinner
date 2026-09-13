@@ -1,27 +1,38 @@
-.recipeCarouselHeader {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.recipeCarousel {
   margin-bottom: 16px;
-
-  a {
-    display: inline-flex;
+  
+  .recipeCarouselHeader {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 4px;
-    color: var(--color-accent);
-    text-decoration: none;
+    margin-bottom: 16px;
+  
+    a {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      color: #3B9B8A;
+      text-decoration: none;
+    }
   }
 }
 
 .menuPlan {
   background-color: #fff;
   border-radius: 16px;
-  padding: 10px;
+  /* padding-block: 10px; */
+
   .menuPlanHeader {
     align-items: center;
     display: flex;
     justify-content: space-between;
     margin-block-end: 8px;
+    padding: 10px;
+    
+    & a {
+      color: #3B9B8A;
+      text-decoration: none;
+    }
   }
 
   & .planDetails {
@@ -29,6 +40,8 @@
     font-size: 12px;
     gap: 4px;
     text-align: center;
+    padding-inline-start: 10px;
+    padding-block-end: 10px;
 
     & .planDay {
       div {
@@ -59,4 +72,21 @@
       }
     }
   }
+}
+
+.addRecipe {
+    background-color: #4B8278;
+    border-color: transparent;
+    color: #fff;
+    border-radius: 50%;
+    inline-size: 48px;
+    block-size: 48px;
+    position: fixed;
+    inset-block-end: 75px;
+    inset-inline-end: 20px;
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }

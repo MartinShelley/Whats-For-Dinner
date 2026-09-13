@@ -1,13 +1,22 @@
 import { Hero } from '../../components/hero/hero';
 import { RecipeCard } from '../../components/recipe-card/recipe-card';
+import { RecipeForm } from '../../components/recipe-form/recipe-form';
 import styles from './dashboard.module.css';
 
+import { useState } from 'react';
 import { ChevronRight, Plus } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/swiper.css';
 import 'swiper/css/scrollbar';
 
 export default function Dashboard() {
+
+  const [showForm, setShowForm] = useState(false);
+
+  const toggleForm = () => {
+    setShowForm((showForm) => !showForm);
+  }
+
   return (
     <>
       <Hero />
@@ -38,7 +47,7 @@ export default function Dashboard() {
         </div>
 
         <div className={styles.planDetails}>
-          <Swiper spaceBetween={10} slidesPerView={5.5} style={{ paddingBottom: '20px' }}>
+          <Swiper spaceBetween={10} slidesPerView={5.5} style={{ paddingRight:'10px' }}>
             <SwiperSlide>
               <div className={styles.planDay}>
                 <p>Mon</p>
@@ -98,6 +107,11 @@ export default function Dashboard() {
           </Swiper>
         </div>
       </div>
+      <button className={styles.addRecipe} onClick={toggleForm}>
+        <Plus />
+      </button>
+
+      {showForm && <RecipeForm closeForm={toggleForm} />}
     </>
   )
 }
