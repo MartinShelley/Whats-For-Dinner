@@ -7,7 +7,7 @@ const navItems = [
     href: '#',
     label: 'Home',
     icon: Home,
-    aria_current: 'page'
+    aria_current: 'page' as const
   },
   {
     href: '#',

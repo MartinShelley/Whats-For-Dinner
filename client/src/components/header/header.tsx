@@ -17,10 +17,10 @@ function Header() {
 
       <div className={styles.navRight}>
         <button className={styles.navButton}>
-          <Search />
+          <Search color="#4A5565" />
         </button>
         <button className={styles.navButton} aria-label="Notifications">
-          <Bell />
+          <Bell color="#4A5565" />
           { hasNotification && <span className={styles.badge} /> }
         </button>
       </div>

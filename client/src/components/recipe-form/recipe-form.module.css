@@ -8,25 +8,26 @@
   padding: 0 20px 20px;
 
   .header {
+    align-items: center;
     background-color: #fff;
     display: flex;
     justify-content: space-between;
-    /* margin-block-end: 20px; */
     position: sticky;
     top: 0;
-    /* position: fixed;
-    top: 0;
-    left: 0; */
     width: 100%;
     padding-block: 20px;
 
+    button {
+      block-size: 40px;
+      inline-size: 40px;
+    }
+
     .cancel {
-      /* background-color: transparent; */
       border: transparent;
       border-radius: 50%;
 
       svg {
-        background-color: #F3F4F6;
+        margin: 0 auto;
         stroke: #4A5565;
 
         circle {
@@ -34,12 +35,15 @@
         }
       }
     }
+    
+    h2 {
+      font-size: 20px;
+    }
 
     .save {
       background-color: transparent;
       border-color: transparent;
       color: #3B9B8A;
-
     }
   }
 
@@ -61,6 +65,7 @@
     label {
       align-content: center;
       block-size: 100%;
+      display: grid;
       inline-size: 100%;
       justify-items: center;
       text-align: center;
@@ -79,7 +84,6 @@
 
     .difficulty {
       display: flex;
-      /* justify-content: space-between; */
       gap: 10px;
 
       div {

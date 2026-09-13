@@ -20,7 +20,7 @@
 .menuPlan {
   background-color: #fff;
   border-radius: 16px;
-  /* padding-block: 10px; */
+  padding-block-end: 10px;
 
   .menuPlanHeader {
     align-items: center;
@@ -84,7 +84,7 @@
     position: fixed;
     inset-block-end: 75px;
     inset-inline-end: 20px;
-    z-index: 4;
+    z-index: 10;
     display: flex;
     align-items: center;
     justify-content: center;
