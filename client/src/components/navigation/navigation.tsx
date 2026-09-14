@@ -1,16 +1,16 @@
+import { Link } from '@tanstack/react-router';
 import { Home, Book, Sparkles, Calendar, Settings } from 'lucide-react';
 
 import './navigation.module.css';
 
 const navItems = [
   {
-    href: '#',
+    href: '/dashboard',
     label: 'Home',
     icon: Home,
-    aria_current: 'page' as const
   },
   {
-    href: '#',
+    href: '/recipes',
     label: 'Recipes',
     icon: Book
   },
@@ -36,12 +36,12 @@ function Navigation() {
     <>
       <nav>
         <ul>
-          { navItems.map(({ href, label, icon: Icon, aria_current }) => (
+          { navItems.map(({ href, label, icon: Icon }) => (
             <li>
-              <a href={ href } aria-current={aria_current}>
+              <Link to={ href }>
                 <Icon />
                 <span>{ label }</span>
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
