@@ -1,12 +1,68 @@
-/* .button {
-  background-color: #3B9B8A;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 4px;
+.button {
+  border: transparent;
+  border-radius: 12px;
   cursor: pointer;
+  padding: 10px 20px;
+  width: 100%;
 }
 
-.button:hover {
-  background-color: #2D7A6B;
-} */
+.button[data-variant="primary"] {
+  background-color: #4B8278;
+  color: #fff;
+}
+
+.button[data-variant="text"] {
+  background-color: transparent;
+  color: #3B9B8A;
+  inline-size: fit-content;
+  padding: unset;
+}
+
+.button[data-variant="icon"] {
+  background-color: #4B8278;
+  block-size: 48px;
+  border-radius: 50%;
+  color: #fff;
+  inline-size: 48px;
+  padding: unset;
+}
+
+.button[data-variant="icon"][data-icon-variant="subtle"] {
+  background-color: #F3F4F6;
+
+  svg {
+    stroke: #4A5565;
+  }
+}
+
+.badge {
+  position: absolute;
+  top: 4px;
+  right: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--color-success, teal);
+  border: 2px solid var(--color-surface-muted);
+}
+
+.button[data-variant="icon-rounded"] {
+  border-radius: 20px;
+  color: #3B9B8A;
+  background-color: #fff;
+  display: inline-flex;
+  gap: 8px;
+  padding: 5px 10px;
+  font-weight: 600;
+}
+
+.button[data-variant="icon-rounded"][data-icon-variant="accent"] {
+  background-color: #fff;
+  color: #3B9B8A;
+}
+
+.button:disabled {
+  background-color: #D1D5DC;
+  color: #fff;
+  cursor: not-allowed;
+}

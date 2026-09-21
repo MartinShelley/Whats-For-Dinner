@@ -1,3 +1,4 @@
+import { Button } from '../../components/button/button';
 import { Hero } from '../../components/hero/hero';
 import { RecipeCard } from '../../components/recipe-card/recipe-card';
 import { RecipeForm } from '../../components/recipe-form/recipe-form';
@@ -106,9 +107,7 @@ export default function Dashboard() {
           </Swiper>
         </div>
       </div>
-      <button className={styles.addRecipe} onClick={toggleForm}>
-        <Plus />
-      </button>
+      <Button className={styles.addRecipe} variant="icon" icon={Plus} onClick={toggleForm} />
 
       {showForm && <RecipeForm closeForm={toggleForm} />}
     </>

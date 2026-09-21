@@ -9,11 +9,9 @@ function RecipeForm({ closeForm }: { closeForm: () => void }) {
   return (
     <form className={styles.recipeForm}>
       <div className={styles.header}>
-        <Button type="button" className={styles.cancel} onClick={closeForm}>
-          <XCircle strokeWidth={2}/>
-        </Button>
+        <Button type="button" variant="icon" icon={XCircle} iconVariant="subtle" stroke={2} className={styles.cancel} onClick={closeForm} />
         <h2>Add Recipe</h2>
-        <Button type="button" label="Save" className={styles.save} onClick={() => { /* Add save logic */ }} />
+        <Button type="button" variant="text" label="Save" onClick={() => { /* Add save logic */ }} />
       </div>
       <div className={styles.formWrapper}>
         {/* Image Upload */}
@@ -33,9 +31,9 @@ function RecipeForm({ closeForm }: { closeForm: () => void }) {
         <fieldset>
           <legend>Difficulty</legend>
           <div className={styles.difficulty}>
-            <Input id='easy' label='Easy' type='radio' name='difficulty' value='easy' defaultChecked/>
-            <Input id='medium' label='Medium' type='radio' name='difficulty' value='medium'/>
-            <Input id='hard' label='Hard' type='radio' name='difficulty' value='hard'/>
+            <Input id='easy' label='Easy' type='radio' name='difficulty' value='easy' defaultChecked />
+            <Input id='medium' label='Medium' type='radio' name='difficulty' value='medium' />
+            <Input id='hard' label='Hard' type='radio' name='difficulty' value='hard' />
           </div>
         </fieldset>
         {/* Tags */}
@@ -69,10 +67,7 @@ function RecipeForm({ closeForm }: { closeForm: () => void }) {
               />
             </li>
           </ul>
-          <Button type="button" label="Add Ingredient" className={styles.ingredients__add} onClick={() => { /* Add ingredient logic */ }} />
-            {/* <span className={styles.ingredients__add-icon} aria-hidden="true">+</span>
-            Add Ingredient */}
-          {/* </Button> */}
+          <Button type="button" label="Add Ingredient" disabled onClick={() => { /* Add ingredient logic */ }} />
         </fieldset>
         {/* Instructions */}
         <fieldset className={styles.instructions}>
@@ -84,7 +79,7 @@ function RecipeForm({ closeForm }: { closeForm: () => void }) {
                 placeholder="Step 1" />
               </li>
           </ol>
-          <Button type="button" label="+ Add Step" className={styles.instructions__add} onClick={() => { /* Add instruction logic */ }} />
+          <Button type="button" label="+ Add Step" disabled onClick={() => { /* Add instruction logic */ }} />
         </fieldset>
         {/* Notes */}
         <fieldset className={styles.notes}>
@@ -92,7 +87,7 @@ function RecipeForm({ closeForm }: { closeForm: () => void }) {
           <textarea className={styles.notesTextarea} placeholder="Add any additional notes here..." />
         </fieldset>
       </div>
-      <Button type="button" label="Save Recipe" className={styles.submitForm} onClick={() => { /* Add submit logic */ }} />
+      <Button type="button" label="Save Recipe" variant="primary" onClick={() => { /* Add submit logic */ }} />
     </form>
   )
 }

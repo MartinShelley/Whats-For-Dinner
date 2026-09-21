@@ -75,12 +75,6 @@
 }
 
 .addRecipe {
-    background-color: #4B8278;
-    border-color: transparent;
-    color: #fff;
-    border-radius: 50%;
-    inline-size: 48px;
-    block-size: 48px;
     position: fixed;
     inset-block-end: 75px;
     inset-inline-end: 20px;
@@ -88,5 +82,4 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
 }

@@ -1,9 +1,12 @@
 import { Search, Bell } from "lucide-react";
 
+import { Button } from "../button/button";
+
 import styles from './header.module.css';
 
 function Header() {
   const hasNotification = true;
+
   return (
     <header>
       <div className={styles.navLeft}>
@@ -16,13 +19,8 @@ function Header() {
       </div>
 
       <div className={styles.navRight}>
-        <button className={styles.navButton}>
-          <Search color="#4A5565" />
-        </button>
-        <button className={styles.navButton} aria-label="Notifications">
-          <Bell color="#4A5565" />
-          { hasNotification && <span className={styles.badge} /> }
-        </button>
+        <Button className={styles.navButton} variant="icon" icon={Search} iconVariant="subtle" onClick={() => { /* Add search logic */ }} aria-label="Search" />
+        <Button className={styles.navButton} variant="icon" icon={Bell} iconVariant="subtle" onClick={() => { /* Add notification handling logic */ }} aria-label="Notifications" badge={hasNotification} />
       </div>
     </header>
   );

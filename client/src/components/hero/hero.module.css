@@ -17,13 +17,6 @@
 }
 
 .heroButton {
-  border-radius: 20px;
-  color: #3B9B8A;
-  background-color: #fff;
-  display: inline-flex;
-  gap: 8px;
-  padding: 5px 10px;
-  margin-top: 16px;
-  border-color: transparent;
-  font-weight: 600;
+  margin-block-start: 16px;
+  width: fit-content;
 }
