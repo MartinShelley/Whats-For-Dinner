@@ -1,0 +1,17 @@
+.formGroup {
+  padding-block-end: 24px;
+  & input {
+    background-color: #fff;
+    width: 100%;
+  }
+}
+
+.tagSwiper {
+  margin-block-end: 24px;
+}
+
+.recipeList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}

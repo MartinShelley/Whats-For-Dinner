@@ -1,7 +1,5 @@
 import { type ComponentPropsWithoutRef } from 'react';
 
-import styles from './input.module.css';
-
 interface InputProps extends ComponentPropsWithoutRef<'input'> {
   id?: string;
   label?: string;

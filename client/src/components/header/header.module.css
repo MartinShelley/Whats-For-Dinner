@@ -3,7 +3,7 @@ header {
   background-color: #fff;
   justify-content: space-between;
   display: flex;
-  padding: 20px;
+  padding: 15px 20px;
   
   h3, p {
     margin: 0;

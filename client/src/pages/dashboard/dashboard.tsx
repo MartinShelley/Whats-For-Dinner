@@ -5,6 +5,7 @@ import { RecipeForm } from '../../components/recipe-form/recipe-form';
 import styles from './dashboard.module.css';
 
 import { useState } from 'react';
+import { Link } from '@tanstack/react-router';
 import { ChevronRight, Plus } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/swiper.css';
@@ -23,7 +24,7 @@ export default function Dashboard() {
       <div className={styles.recipeCarousel}>
         <div className={styles.recipeCarouselHeader}>
           <h3>Your Recipes</h3>
-          <a href="#">See All <ChevronRight /></a>
+          <Link to="/recipes">See All <ChevronRight /></Link>
         </div>
         <Swiper spaceBetween={10} slidesPerView={1.5}>
           <SwiperSlide>
